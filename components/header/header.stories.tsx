@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Header from './header';
 import GitHubIcon from '../icon/github';
 import QiitaIcon from '../icon/qiita';
+import Header from './header';
 
 const meta: Meta<typeof Header> = {
   title: 'Component/Header',
@@ -21,7 +21,7 @@ type Story = StoryObj<typeof Header>;
 export const NoChildren: Story = {
   args: {
     title: "Haya372's Portfolio!!",
-    children: []
+    children: [],
   },
 };
 
@@ -29,8 +29,8 @@ export const WithIcons: Story = {
   args: {
     title: "Haya372's Portfolio!!",
     children: [
-      <GitHubIcon key='github' href='https://github.com/Haya372' />,
-      <QiitaIcon key='qiita' href='https://qiita.com/haya3' />,
-    ]
+      <GitHubIcon key="github" href="https://github.com/Haya372" />,
+      <QiitaIcon key="qiita" href="https://qiita.com/haya3" />,
+    ],
   },
-}
+};

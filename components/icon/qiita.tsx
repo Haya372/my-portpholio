@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import { SiQiita } from 'react-icons/si';
-import { Icon, IconProps } from "./base";
+import { Icon, IconProps } from './base';
 
 const QiitaIcon: Icon = (props: IconProps) => {
   return (
@@ -8,6 +8,6 @@ const QiitaIcon: Icon = (props: IconProps) => {
       <SiQiita href={props.href} />
     </div>
   );
-}
+};
 
 export default QiitaIcon;
