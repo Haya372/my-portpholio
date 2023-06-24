@@ -4,9 +4,9 @@ import { Icon, IconProps } from './base';
 
 const GitHubIcon: Icon = (props: IconProps) => {
   return (
-    <div className="m-1">
-      <GrGithub href={props.href} color="black" />
-    </div>
+    <a className="m-1 hover:opacity-70" href={props.href}>
+      <GrGithub color="black" />
+    </a>
   );
 };
 

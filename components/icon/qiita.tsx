@@ -4,9 +4,9 @@ import { Icon, IconProps } from './base';
 
 const QiitaIcon: Icon = (props: IconProps) => {
   return (
-    <div className="m-1">
-      <SiQiita href={props.href} />
-    </div>
+    <a className="m-1 hover:opacity-70 text-grey-200" href={props.href}>
+      <SiQiita />
+    </a>
   );
 };
 

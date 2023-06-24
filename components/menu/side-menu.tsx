@@ -15,8 +15,8 @@ const SideMenuItem: React.FC<SideMenuItemProps> = (
   props: SideMenuItemProps
 ) => {
   const className = props.focused
-    ? 'font-extrabold text-xl text-blue-500'
-    : 'text-opacity-80 text-blue-500';
+    ? 'font-extrabold text-xl text-blue-500 hover:opacity-70 sticky'
+    : 'text-opacity-70 text-blue-500 hover:opacity-50 sticky';
   const href = props.headline.id ? `#${props.headline.id}` : undefined;
   return (
     <a className={className} href={href}>
