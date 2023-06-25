@@ -1,4 +1,5 @@
 import React from 'react';
+import BaseContent from './base';
 
 interface TechContentProps {
   id: string;
@@ -14,12 +15,9 @@ const TechContent: React.FC<TechContentProps> = (props: TechContentProps) => {
     </div>
   ));
   return (
-    <div className="m-4 text-gray-700">
-      <h1 className="text-xl font-semibold border-gray-600 border-l-8 border-b py-1 pl-2 pr-4 inline mb-2">
-        {props.headline}
-      </h1>
+    <BaseContent id={props.id} headline={props.headline}>
       <div className="grid grid-cols-4 mt-2 gap-4">{gridItems}</div>
-    </div>
+    </BaseContent>
   );
 };
 
