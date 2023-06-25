@@ -18,7 +18,7 @@ const SkillContent: React.FC<SkillContentProps> = (
   ));
   return (
     <BaseContent id={props.id} headline={props.headline}>
-      <div className="grid grid-cols-4 mt-2 gap-4">{gridItems}</div>
+      <div className="grid grid-cols-4 mt-4 gap-4">{gridItems}</div>
     </BaseContent>
   );
 };
