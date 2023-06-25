@@ -1,14 +1,16 @@
 import React from 'react';
 import BaseContent from './base';
 
-interface TechContentProps {
+interface SkillContentProps {
   id: string;
   headline: string;
   children: React.ReactElement[];
   colSize?: number;
 }
 
-const TechContent: React.FC<TechContentProps> = (props: TechContentProps) => {
+const SkillContent: React.FC<SkillContentProps> = (
+  props: SkillContentProps
+) => {
   const gridItems = props.children.map((child, idx) => (
     <div key={idx} className="mx-auto">
       {child}
@@ -21,4 +23,4 @@ const TechContent: React.FC<TechContentProps> = (props: TechContentProps) => {
   );
 };
 
-export default TechContent;
+export default SkillContent;

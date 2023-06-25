@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import GitHubIcon from '../icon/github';
-import QiitaIcon from '../icon/qiita';
-import IconCard from './icon-card';
+import SkillCard from './skill-card';
 
-const meta: Meta<typeof IconCard> = {
-  title: 'Component/IconCard',
-  component: IconCard,
+const meta: Meta<typeof SkillCard> = {
+  title: 'Component/SkillCard',
+  component: SkillCard,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
   parameters: {
@@ -16,7 +15,7 @@ const meta: Meta<typeof IconCard> = {
 
 export default meta;
 
-type Story = StoryObj<typeof IconCard>;
+type Story = StoryObj<typeof SkillCard>;
 
 export const TestGithub: Story = {
   args: {

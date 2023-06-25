@@ -1,4 +1,5 @@
 import React from 'react';
+import H1 from '../headline/h1';
 
 export interface BaseContentProps {
   id: string;
@@ -9,9 +10,7 @@ export interface BaseContentProps {
 const BaseContent: React.FC<BaseContentProps> = (props: BaseContentProps) => {
   return (
     <div id={props.id} className="m-4 text-gray-700">
-      <h1 className="text-xl font-semibold border-gray-600 border-l-8 border-b py-1 pl-2 pr-4 inline">
-        {props.headline}
-      </h1>
+      <H1 text={props.headline} />
       {props.children}
     </div>
   );

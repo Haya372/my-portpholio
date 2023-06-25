@@ -1,7 +1,7 @@
 import React from 'react';
-import IconCard from '../card/icon-card';
+import SkillCard from '../card/skill-card';
 import BaseContent from '../content/base';
-import TechContent from '../content/tech';
+import SkillContent from '../content/skill';
 import Header from '../header/header';
 import CppIcon from '../icon/cpp';
 import GitHubIcon from '../icon/github';
@@ -35,20 +35,20 @@ const Home: React.FC = () => {
                 ２年目エンジニアのHaya372です。主にバックエンドの開発をしています！
               </div>
             </BaseContent>
-            <TechContent id="skill" headline="Skills">
-              <IconCard icon={<JavaIcon />} title="java" explanation="java" />
-              <IconCard icon={<CppIcon />} title="c++" explanation="c++" />
-              <IconCard
+            <SkillContent id="skill" headline="Skills">
+              <SkillCard icon={<JavaIcon />} title="java" explanation="java" />
+              <SkillCard icon={<CppIcon />} title="c++" explanation="c++" />
+              <SkillCard
                 icon={<TypescriptIcon />}
                 title="typescript"
                 explanation="typescript"
               />
-              <IconCard
+              <SkillCard
                 icon={<GolangIcon />}
                 title="golang"
                 explanation="golang"
               />
-            </TechContent>
+            </SkillContent>
           </div>
         </div>
       </div>

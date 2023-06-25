@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import IconCard from '../card/icon-card';
+import SkillCard from '../card/skill-card';
 import GitHubIcon from '../icon/github';
-import TechContent from './tech';
+import SkillContent from './skill';
 
-const meta: Meta<typeof TechContent> = {
-  title: 'Component/TechContent',
-  component: TechContent,
+const meta: Meta<typeof SkillContent> = {
+  title: 'Component/SkillContent',
+  component: SkillContent,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
   parameters: {
@@ -16,26 +16,26 @@ const meta: Meta<typeof TechContent> = {
 
 export default meta;
 
-type Story = StoryObj<typeof TechContent>;
+type Story = StoryObj<typeof SkillContent>;
 
-export const SampleTech: Story = {
+export const SampleSkill: Story = {
   args: {
-    id: 'sample-tech',
+    id: 'sample-Skill',
     headline: '見出し',
     children: [
-      <IconCard
+      <SkillCard
         key="0"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="1"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="2"
         icon={<GitHubIcon />}
         title="github"
@@ -47,58 +47,58 @@ export const SampleTech: Story = {
 
 export const SampleMultiLineTexh: Story = {
   args: {
-    id: 'sample-multi-line-tech',
+    id: 'sample-multi-line-Skill',
     headline: '見出し',
     children: [
-      <IconCard
+      <SkillCard
         key="0"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="1"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="2"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="3"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="4"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="5"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="6"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="7"
         icon={<GitHubIcon />}
         title="github"
         explanation="説明"
       />,
-      <IconCard
+      <SkillCard
         key="8"
         icon={<GitHubIcon />}
         title="github"
