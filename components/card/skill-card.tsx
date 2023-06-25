@@ -7,7 +7,7 @@ export interface SkillCardProps {
   // タイトル
   title: string;
   // 説明など
-  explanation: string;
+  explanation: string | string[];
 }
 
 const SkillCard: React.FC<SkillCardProps> = (props: SkillCardProps) => {

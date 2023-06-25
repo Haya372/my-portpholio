@@ -36,17 +36,34 @@ const Home: React.FC = () => {
               </div>
             </BaseContent>
             <SkillContent id="skill" headline="Skills">
-              <SkillCard icon={<JavaIcon />} title="java" explanation="java" />
-              <SkillCard icon={<CppIcon />} title="c++" explanation="c++" />
+              <SkillCard
+                icon={<JavaIcon />}
+                title="java"
+                explanation={[
+                  '業務で主に使用しています。',
+                  'まだまだ極められていませんが、SpringBootはわかります。',
+                ]}
+              />
+              <SkillCard
+                icon={<CppIcon />}
+                title="c++"
+                explanation="大学時代の研究で使っていたり、AtCoderに参加する時に使います。"
+              />
               <SkillCard
                 icon={<TypescriptIcon />}
                 title="typescript"
-                explanation="typescript"
+                explanation={[
+                  '学生時代にインターンでJavaScriptを使っていたのですが、そこから独学で勉強しました。',
+                  'フロントだとReact, Vue、バックエンドだとExpressあたりをよく使います。',
+                ]}
               />
               <SkillCard
                 icon={<GolangIcon />}
                 title="golang"
-                explanation="golang"
+                explanation={[
+                  'ミーハーなので、最近流行っていると聞いて勉強しました（笑）',
+                  'Golangで開発する時はginをよく使います。',
+                ]}
               />
             </SkillContent>
           </div>

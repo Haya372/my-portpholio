@@ -22,3 +22,10 @@ export const SampleBase: Story = {
     children: <div className="text-black">テスト用の文字列</div>,
   },
 };
+
+export const SampleBaseHidden: Story = {
+  args: {
+    show: false,
+    children: <div className="text-black">表示されません</div>,
+  },
+};
