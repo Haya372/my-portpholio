@@ -1,5 +1,5 @@
 import React from 'react';
-import TextContent from '../content/text';
+import BaseContent from '../content/base';
 import Header from '../header/header';
 import GitHubIcon from '../icon/github';
 import QiitaIcon from '../icon/qiita';
@@ -20,9 +20,11 @@ const Home: React.FC = () => {
           />
         </div>
         <div className="flex-1">
-          <TextContent id="profile" headline="Profile">
-            ２年目エンジニアのHaya372です。主にバックエンドの開発をしています！
-          </TextContent>
+          <BaseContent id="profile" headline="Profile">
+            <p>
+              ２年目エンジニアのHaya372です。主にバックエンドの開発をしています！
+            </p>
+          </BaseContent>
         </div>
       </div>
     </body>
